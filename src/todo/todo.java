@@ -8,7 +8,6 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.Vector;
-
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -21,11 +20,11 @@ public class todo extends javax.swing.JFrame {
         setTitle("To Do List");
         getContentPane().setBackground(Color.white);
         setIcon();
-    }
+    };
 
     private void setIcon() {
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("todo.png")));
-    }
+    };
 
     private void setDatalist() {
         DefaultTableModel dtm = (DefaultTableModel) Tasklist.getModel();
@@ -49,7 +48,7 @@ public class todo extends javax.swing.JFrame {
             sc.close();
         } catch (Exception ex) {
         }
-    }
+    };
 
     @SuppressWarnings("unchecked")   private void initComponents() {
 
